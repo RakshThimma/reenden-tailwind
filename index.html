@@ -9,7 +9,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
         
-        <img width="20px" class="md:hidden" src="menu.png" alt=""> 
+        <img id="menu-icon" width="20px" class="md:hidden" src="menu.png" alt=""> 
         <ul class="flex gap-5 text-gray-500 hidden md:flex">
             <li>
                 <a class="hover:underline hover:text-black" href="index.html">Home</a>
@@ -23,6 +23,22 @@
 
         </ul>
     </nav>
+    
+    <!-- Side nav bar -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1500" style="width: 50%; height: 100vh; right: -50%;">
+        <p id="menux" style="cursor: pointer;" class="text-right p-5">X</p>
+        <ul class="flex items-center flex-col gap-10 p-5 text-gray-500 right-20 md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html" target="_blank">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html" target="_blank">Contact</a>
+            </li>
+        </ul>
+    </section>
 
     <!-- header section -->
      <section class="bg-green-100 p-6 flex justify-center md:p-10">
@@ -114,5 +130,6 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit iste obcaecati placeat officiis repellat eligendi doloremque dolore nostrum corporis maxime.</p>
         <p>@ 2021 Greenday.com</p>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
